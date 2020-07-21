@@ -29,7 +29,7 @@ require_once(__DIR__ . '/../../../config.php');
 global $CFG;
 
 $where = "component IN ('core_h5p','mod_hvp') AND filearea = 'libraries' AND filesize!=0 AND filename != '.' ";
-$records = $DB->get_records_sql("select min(id) AS id,contenthash from mdl_files where " . $where ." group by contenthash");
+$records = $DB->get_records_sql("select min(id) AS id,contenthash from {files} where " . $where ." group by contenthash");
 
 $total = sizeof($records);
 $len = strlen($total);
