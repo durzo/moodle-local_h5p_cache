@@ -10,10 +10,6 @@ Place files in local/h5p_cache
 
 Run Moodle upgrade
 
-Patch H5P to allow class overrides, you can find the patch here: https://github.com/durzo/h5p-moodle-plugin/commit/52f250e0e8c6b910af5d02ac987559ffa42a85f3.patch
-
-The Patch has been sent to H5P and is currently awaiting integration, hopefully one day it will be accepted.
-
 Finally, add the class override to your config.php to make H5P use this plugin.
 ```
 $CFG->mod_hvp_file_storage_class = '\local_h5p_cache\file_storage';
