@@ -24,7 +24,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020070100;      // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version   = 2023060600;      // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires  = 2017051500;
 $plugin->component = "local_h5p_cache";
 $plugin->maturity  = MATURITY_STABLE;
